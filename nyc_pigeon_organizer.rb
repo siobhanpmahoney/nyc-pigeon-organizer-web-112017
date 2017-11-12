@@ -6,12 +6,9 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list.keys.include?(n)
           pigeon_list[n] = {}
         end
-        if !pigeon_list[n].keys.include?(attribute)
-          pigeon_list[n][attribute] = []
-        end
         pigeon_list[n][attribute] << detail
       end
     end
   end
   pigeon_list
-end 
+end
